@@ -3,11 +3,13 @@ const book = {
     author: "Elizabeth Acevedo",
     year: "2018",
     getSummary: function (){
-        return `Title: ${this.title}`;  // TODO: continue with remaining properties of the book (author, year)
-
-    }
+        return `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}`;
+        }
 };
 
-// TODO: add a genre key value pair.
-// TODO: delete the year property
-// TODO: console.log(book)
+book.genre = "Young Adult";
+
+delete book.year;
+
+console.log(book);
+
